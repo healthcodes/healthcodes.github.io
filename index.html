@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ57JDQYGD"></script>
+		<script>
+		</script>
+	</head>
+
+	<body>
+		<script>
+			var urlParams = new URLSearchParams(window.location.search);
+			redirect = urlParams.get('r');
+			console.log(redirect);
+			document.title = redirect;
+
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-YZ57JDQYGD');			
+
+			window.location.replace(redirect);
+		</script>
+	</body>
+</html>
